@@ -1,0 +1,670 @@
+ /*
+ * # Experience UI 
+ * https://github.com/Franwebmaster/experience-ui
+ * 
+ *
+ * Copyright 2018
+ * Author: Francisco Barros;
+ * 
+ *
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i,700,900|Roboto:100,300,300i,400,400i,500,700,900');
+
+
+/*******************************
+             Resete
+*******************************/
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+html {
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+	display: block;
+}
+
+figcaption,
+figure,
+main {
+	display: block;
+}
+
+figure {
+	margin: 1em 40px;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+hr {
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+
+b,
+strong {
+	font-weight: inherit;
+}
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+img {
+	border-style: none;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+a {
+	background-color: transparent;
+	-webit-text-decoration-skip: objects;
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: Roboto, sans-serif, 'Lato';
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+
+button,
+input {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+button::-moz-focusring,
+[type="button"]::-moz-focusring,
+[type="reset"]::-moz-focusring,
+[type="submit"]::-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+textarea {
+	overflow: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+[type="checkbox"],
+[type="radio"] {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+[type="search"] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration{
+	-webkit-appearance: none;
+}
+
+[hidden] {
+	display: none;
+}
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+
+canvas {
+	display: inline-block;
+}
+
+
+
+ /*
+ * # Experience UI 
+ * https://github.com/Franwebmaster/experience-ui
+ * 
+ *
+ * Copyright 2018
+ * Author: Francisco Barros;
+ * 
+ *
+ */
+
+
+/*******************************
+             Página
+*******************************/
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 14px;
+}
+
+body {
+	font-family: 'Roboto', 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 1.4285em; 
+	color: rgba(0, 0, 0, 0.87);
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Roboto', 'Lato', sans-serif;
+	line-height: 1.28571429em;
+	margin: calc(2rem - 0.14285714em) 0em 1rem;
+	font-weight: bold;
+	padding: 0em;
+}
+
+h1 {
+	min-height: 1rem;
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.71428571rem;
+}
+
+h3 {
+	font-size: 1.28571429rem;
+}
+
+h4 {
+	font-size: 1.07142857rem;
+}
+
+h5 {
+	font-size: 1rem
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child {
+	margin-top: 0em
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child {
+	margin-bottom: 0em
+}
+
+p {
+	margin: 0em 0em 1em;
+	line-height: 1.4285em;
+}
+
+p:first-child {
+	margin-top: 0em
+}
+
+p:last-child {
+	margin-bottom: 0em
+}
+
+a {
+	color: #4183C4;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #1e70bf;
+	text-decoration: none;
+}
+
+::-webkit-selection {
+	background-color: #CCE2FF;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+::-moz-selection {
+	background-color: #CCE2FF;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+::selection {
+	background-color: #CCE2FF;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+textarea::-webkit-selection,
+input::-webkit-selection {
+	background-color: rgba(100, 100, 100, 0.4);
+	color: rgba(0, 0, 0, 0.87);
+}
+
+textarea::-moz-selection,
+input::-moz-selection {
+	background-color: rgba(100, 100, 100, 0.4);
+	color: rgba(0, 0, 0, 0.87);
+}
+
+textarea::selection,
+input::selection {
+	background-color: rgba(100, 100, 100, 0.4);
+	color: rgba(0, 0, 0, 0.87);
+}
+
+body ::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 10px;
+	height: 10px;
+}
+
+body ::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 0px;
+}
+
+body ::-webkit-scrollbar-thumb {
+	cursor: pointer;
+	border-radius: 5px;
+	background: rgba(0, 0, 0, 0,25);
+	-webkit-transition: color 0.2s ease;
+	transition: color 0.2s ease;
+}
+
+body ::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(0, 0, 0, 0.15);
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+	background: rgba(128, 135, 139, 0.8);
+}
+
+
+
+ /*
+ * # Experience UI 
+ * https://github.com/Franwebmaster/experience-ui
+ * 
+ *
+ * Copyright 2018
+ * Author: Francisco Barros;
+ * 
+ *
+ */
+
+
+/*******************************
+             Botões UI
+*******************************/
+.io.botao,
+.io.button {
+	cursor: pointer;
+	display: inline-block;
+	min-height: 1em;
+	outline: none;
+	border: none;
+	vertical-align: baseline;
+	background: rgb(234, 234, 234)  none;
+	color: rgba(0, 0, 0, 0.6);
+	font-family: 'Roboto', 'Lato', sans-serif;
+	margin: 0em 0.25em 0em 0em;
+	padding: 0.78571429em 1.5em 0.78571429em;
+	text-transform: none;
+	font-weight: 400;
+	line-height: 1em;
+	font-style: normal;
+	text-align: center;
+	text-decoration: none;
+	border-radius:  0.28571429rem;
+	-webkit-box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+	box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
+  	transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
+  	transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+  	transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
+	will-change: '';
+	-webkit-tap-higlight-color: transparent;
+}
+
+.io.botao:hover,
+.io.button:hover {
+	background-color: rgba(202, 203, 205, 0.88);
+	background-image: none;
+	-webkit-box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15);
+	box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15);
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.io.botao:hover .icone,
+.io.button:hover .icon {
+	opacity: 0.85;
+}
+
+.io.botao:focus,
+.io.button:focus {
+	background-color: rgba(202, 203, 205, 0.88);
+	color: rgba(0, 0, 0, 0.8);
+	background-image: '' !important;
+	-wbkit-box-shadow: '' !important;
+	box-shadow: '' !important;
+}
+
+.io.botao:focus .icone,
+.io.button:focus .icon {
+	opacity: 0.85;
+}
+
+.io.botao:active,
+.io.button:active {
+	background-color: rgb(216, 216, 216);
+	background-image: '';
+	color: rgba(0, 0, 0, 0.8);
+	-webkit-box-shadow: 0px 0px 0px 1px transparent inset, none;
+	box-shadow: 0px 0px 0px 1px transparent inset, none;
+}
+
+
+/*******************************
+             Ativo
+*******************************/
+.io.botao.ativo,
+.io.button.active {
+	background-color: rgb(208, 208, 208);
+	color: rgba(0, 0, 0, 0.95);
+	-webkit-box-shadow: 0px 0px 0px 1px transparent inset, none;
+	box-shadow: 0px 0px 0px 1px transparent inset, none;
+}
+
+.io.botao.ativo:hover,
+.io.button.active:hover {
+	background-color: rgb(197, 197, 197);
+	background-image: none;
+	color: rgba(0, 0, 0, 0.95);
+}
+
+.io.botao.ativo:active,
+.io.button.active:active {
+	background-color: rgb(197, 197, 197);
+	background-image: none;
+}
+
+
+/*******************************
+             Carregamento
+*******************************/
+.io.botao.carregando,
+.io.button.loading {
+	position: relative;
+	cursor: default;
+	text-shadow: none !important;
+	color: transparent !important;
+	opacity: 1;
+	pointer-events: auto;
+	-webkit-transition: all 0s linear, opacity 0.1s ease;
+  	transition: all 0s linear, opacity 0.1s ease;
+}
+
+.io.botao.carregando:before,
+.io.button.loading:before {
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+	margin: -0.64285714em 0em 0em -0.64285714em;
+	width: 1.28571429em;
+	height: 1.28571429em;
+	border-radius: 500rem;
+	border: 0.2em solid;
+}
+
+.io.botao.carregando:after,
+.io.button.loading:after {
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+	margin: -0.64285714em 0em 0em -0.64285714em;
+	width: 1.28571429em;
+	height: 1.28571429em;
+	-webkit-animation: carregando-circulo 0.6s linear;
+	animation: carregando-circulo 0.6s linear;
+	-webkit-animation-iteration-count: infinite;
+  	animation-iteration-count: infinite;
+  	border-radius: 500rem;
+  	border-color: #FFF transparent transparent;
+  	border-style: solid;
+  	border-width: 0.2em;
+  	-webkit-box-shadow: 0px 0px 0px 1px transparent;
+  	box-shadow: 0px 0px 0px 1px transparent;
+}
+
+
+@-webkit-keyframes carregando-circulo {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes carregando-circulo {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+/*******************************
+             Desabilitado
+*******************************/
+.io.botao .desabilitado.botao,
+.io.button .disabled.button,
+.io.botao.desabilitado,
+.io.button.disabled,
+.io.botao:disabled,
+.io.button:disabled,
+.io.botao.desabilitado:hover,
+.io.button.disabled:hover,
+.io.botao.desabilitado.ativo.botao,
+.io.button.disabled.active.button {
+	cursor: default;
+	opacity: 0.45 !important;
+	background-image: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	pointer-events: none !important;
+}
+
+
+/*******************************
+             icone
+*******************************/
+.io[class*="alinhado esquerda"].botoes,
+.io[class*="floated left"].buttons,
+.io[class*="alinhado esquerda"].botao,
+.io[class*="floated left"].button {
+	float: left;
+	margin-left: 0em;
+	margin-right: 0.25em;
+}
+
+.io[class*="alinhado direita"].botoes,
+.io[class*="floated right"].buttons,
+.io[class*="alinhado direita"].botao,
+.io[class*="floated right"].button {
+	float: right;
+	margin-left: 0em;
+	margin-right: 0.25em;
+}
+
+
+/*******************************
+             Compacto
+*******************************/
+.io.botoes.compacto .botao,
+.io.botao.compacto {
+	padding: 0.58928571em 1.125em 0.58928571em;
+}
+
+.io.botoes.compacto.icone .botao,
+.io.buttons.compact.icon .button,
+.io.botao.compacto.icone,
+.io.button.compact.icon {
+	padding: 0.58928571em 0.58928571em 0.58928571em;
+}
+
+
+/*******************************
+             Tamanhos
+*******************************/
+.io.botoes.mini .botao,
+.io.buttons.mini .button,
+.io.botao.mini,
+.io.button.mini {
+	font-size: 0.78571429rem;
+}
+
+.io.botoes.minusculo .botao,
+.io.buttons.tiny .button,
+.io.botao.minusculo,
+.io.button.tiny {
+	font-size: 0.85714286rem;
+}
+
+.io.botoes.pequeno .botao,
+.io.buttons.small .button,
+.io.botao.pequeno,
+.io.button.small {
+	font-size: 0.92857143rem;
+}
+
+.io.botoes .botao,
+.io.buttons .button,
+.io.botao,
+.io.button {
+	font-size: 1rem;
+}
+
+.io.botoes.largo .botao,
+.io.buttons.large .button,
+.io.botao.largo,
+.io.button.large {
+	font-size: 1.14285714rem;
+}
+
+.io.botoes.grande .botao,
+.io.buttons.big .button,
+.io.botao.grande,
+.io.button.big {
+	font-size: 1.28571429rem;
+}
+
+
+/*******************************
+             Icone
+*******************************/
+.io.botoes.icone .botao,
+.io.buttons.icon .button,
+.io.botao.icone,
+.io.button.icon {
+	padding: 0.78571429em 0.78571429em 0.78571429em;
+}
+
+.io.botoes.icone .botao > .icone,
+.io.buttons.icon .button > .icon,
+.io.botao.icone > .icone,
+.io.button.icon > .icon {
+	opacity: 0.9;
+	margin: 0em !important;
+	vertical-align: top;
+}
+
+
+/*******************************
+             Estilos
+*******************************/
+
+
+
