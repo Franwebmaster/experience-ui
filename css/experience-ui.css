@@ -663,8 +663,155 @@ body ::-webkit-scrollbar-thumb:hover {
 
 
 /*******************************
+             Fluido
+*******************************/
+.io.botoes.fluido,
+.io.buttons.fluid,
+.io.botao.fluido,
+.io.button.fluid {
+	width: 100%;
+}
+
+.io.botao.fluido,
+.io.button.fluid {
+	display: block;
+}
+
+
+/*******************************
              Estilos
 *******************************/
+.io.botoes.primario .botao,
+.io.buttons.primary .button,
+.io.botao.primario,
+.io.button.primary {
+	background-color: #4fc3f7;
+	border: 1px solid #4fc3f7;
+	color: #FFF;
+	text-shadow: none;
+	background-image: none;
+}
+
+.io.botoes.primario .botao:hover,
+.io.buttons.primary .button:hover,
+.io.botao.primario:hover,
+.io.button.primary:hover {
+	background-color: #57AEF5;
+	border-color: #57AEF5;
+	color: #FFF;
+	text-shadow: none;
+}
+
+.io.botoes.primario .botao:focus,
+.io.buttons.primary .button:focus,
+.io.botao.primario:focus,
+.io.button.primary:focus {
+	background-color: #57AEF5;
+	border-color: #4fc3f7;
+	color: #FFF;
+}
+
+.io.botoes.primario .botao:active,
+.io.buttons.primary .button:active,
+.io.botao.primario:active,
+.io.button.primary:active {
+	background-color: #43A4F3;
+	border-color: #e4e7ed;
+	box-shadow: 5px 5px 5px 0px rgba(34, 36, 38, 0.15) inset;
+}
+
+.io.botoes.primario .ativo.botao,
+.io.buttons.primary .active.button,
+.io.botao.primario.ativo,
+.io.button.primary.active {
+	background-color: #57AEF5;
+	border-color: #57AEF5;
+	color: #FFF;
+	text-shadow: none;
+}
+
+.io.botoes.primario.sombra .botao,
+.io.buttons.primary.shadow .button,
+.io.botao.primario.sombra,
+.io.button.primary.shadow {
+	box-shadow: 0px 7px 20px -5px #ccc;
+}
+
+
+
+
+/*******************************
+             Secundario
+*******************************/
+.io.botoes.secundario .botao,
+.io.buttons.sencudary .button,
+.io.botao.secundario,
+.io.button.sencudary {
+	background-color: #90A4AE;
+	border: 1px solid #90A4AE;
+	color: #FFF;
+	text-shadow: none;
+	background-image: none;
+}
+
+.io.botao.secundario,
+.io.button.sencudary {
+	-webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+	box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+}
+
+.io.botoes.secundario .botao:hover,
+.io.buttons.sencudary .button:hover,
+.io.botao.secundario:hover,
+.io.button.sencudary:hover {
+	background-color: #607D8B;
+	border-color: #607D8B;
+	color: #FFF;
+	text-shadow: none;
+}
+
+.io.botoes.secundario .botao:focus,
+.io.buttons.sencudary .button:focus,
+.io.botao.secundario:focus,
+.io.button.sencudary:focus {
+	background-color: #607D8B;
+	border-color: #607D8B;
+	color: #FFF;
+}
+
+.io.botoes.secundario .botao:active,
+.io.buttons.sencudary .button:active,
+.io.botao.secundario:active,
+.io.button.sencudary:active {
+	background-color: #78909C;
+	border-color: #e4e7ed;
+	box-shadow: 5px 5px 5px 0px rgba(34, 36, 38, 0.15) inset;
+}
+
+.io.botoes.secundario .ativo.botao,
+.io.buttons.sencudary .active.button,
+.io.botao.secundario.ativo,
+.io.button.sencudary.active {
+	background-color: #607D8B;
+	border-color: #607D8B;
+	color: #FFF;
+	text-shadow: none;
+}
+
+.io.botoes.secundario.sombra .botao,
+.io.buttons.sencudary.shadow .button,
+.io.botao.secundario.sombra,
+.io.button.sencudary.shadow {
+	box-shadow: 0px 7px 20px -5px #ccc;
+}
+
+
+
+
+
+
+
+
 
 
 
